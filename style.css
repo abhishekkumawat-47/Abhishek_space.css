@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+section .containor{
+    background-size: cover;
+    overflow-x: hidden;
+    height: 300vh;
+    width: 100%;
+   filter: opacity(.9);
+   position: relative;
+    
+}
+
+.mouse{
+    border-radius: 50%;
+    box-shadow: 0px 0px 80px rgb(35, 103, 163);
+    height: 80px;
+    transition: all .3s linear;
+    width: 80px;
+    
+}
+#earth{
+    position: absolute;
+    top: 10%;
+    left: 21%;
+    height: 100px;
+    box-shadow: 0px 0px 100px rgb(30, 159, 218);
+    width: 100px;
+    animation: rotate 2.5s linear .5s infinite;
+}
+#p1{
+    position: absolute;
+    top: 3%;
+    left: 35%;
+    box-shadow: 0px 0px 100px rgb(73, 21, 156);
+    animation: rotate 3.5s linear .5s infinite;
+}
+#p2{
+    position: absolute;
+    top: 4%;
+    left: 53%;
+    animation: rotate 4.5s linear .5s infinite;
+    box-shadow: 0px 0px 100px rgb(255, 106, 0);
+}
+#p3{
+    position: absolute;
+    top: 16%;
+    left: 78%;
+    height: 90px;
+    width: 90px;
+    box-shadow: 0px 0px 50px rgb(236, 117, 19);
+    animation: rotate 1.5s linear .5s infinite;
+}
+#p4{
+    position: absolute;
+    top: 27%;
+    left: 45%;
+    height: 90px;
+    width: 90px;
+    box-shadow: 0px 0px 50px rgb(19, 142, 236);
+    animation: rotate 1.3s linear .5s infinite;
+    opacity: .8;
+}
+#p5{
+    position: absolute;
+    top: 24%;
+    left: 25%;
+    height: 90px;
+    box-shadow: 0px 0px 50px rgb(173, 96, 19);
+    width: 90px;
+    animation: rotate 3s linear .5s infinite;
+}
+#p6{
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    animation: rotate 2.5s linear .5s infinite;
+    box-shadow: 0px 0px 50px rgb(19, 109, 236);
+}
+#p7{
+    position: absolute;
+    top: 7%;
+    left: 70%;
+    box-shadow: 0px 0px 50px rgb(220, 218, 214);
+    animation: rotate 5.5s linear .5s infinite;
+}
+#p8{
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    opacity: 1;
+    box-shadow: 0px 0px 100px rgba(46, 113, 161, 0.686);
+}
+
+
+.mouse:hover{
+    scale: 1.2;
+}
+@keyframes rotate {
+    0%{
+       rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+     }
+}
+h1{
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width: 300px;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid rgb(12, 60, 99);
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .3s linear ;
+    box-shadow: 0px 0px 20px white;
+}
+h1:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 50px rgb(0, 255, 208);
+    color: rgb(9, 255, 33);
+}
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.rocket{
+    height: 180px;
+    width: 130px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -80%;
+    rotate: 90deg;
+    left: 50%;
+    animation: up 4s linear .3s  infinite;
+    transition: all .25s linear;
+}
+.spaceship{
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -80%;
+    left: -10%;
+    rotate: 40deg;
+    animation: upside 4s linear 1s infinite;
+    transition: all .25s linear;
+}
+.spaceship1{
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -60%;
+    left: -30%;
+    rotate: 40deg;
+    transition: all .25s linear;
+    animation: upper 4s linear 1s infinite ;
+}
+.spaceship2{
+    height: 120px;
+    width: 120px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -100%;
+    left: -30%;
+    rotate: 40deg;
+    animation: lower 4s linear 1s infinite ;
+    transition: all .25s linear;
+}
+.spaceship:hover,.spaceship1:hover,.spaceship2:hover,.rocket:hover{
+    transform: scale(1.4);
+}
+@keyframes up {
+    0%{
+        bottom: -80%;
+        left: -10%;
+    }
+    100%{
+        bottom: -80%;
+        left: 100%;
+    }
+}
+@keyframes upside {
+    0%{
+        bottom: -80%;
+        left: -20%;
+    }
+    100%{
+        bottom: -80%;
+        left: 100%;
+    }
+}
+
+@keyframes upper {
+    0%{
+        bottom: -60%;
+        left: -30%;
+    }
+    100%{
+       bottom: -60%;
+       left: 100%;
+    }
+}
+
+@keyframes lower {
+    0%{
+        bottom: -100%;
+        left: -30%;
+    }
+    100%{
+       bottom: -100%;
+       left: 100%;
+    }
+}
+.solarbox{
+    height: 100vh;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: white ;
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease;
+}
+button{
+    font-size: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin: 70px;
+    transform: scale(1.2);
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 30px #ffffff;
+    transition: .5s ease;   
+    letter-spacing: 10px;
+   
+}
+
+.button{
+    transform: scale(1);
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all .5s linear;
+}
+.button:hover{
+    background: linear-gradient(
+        45deg,
+        #ff0000,#ff7300,#fffb00,#48ff00,
+        #00ffd5,#002bff,#ff00c8,#ff0000
+    );  
+    transition: .6s ease-out;
+    transform: scale(1.2);
+    box-shadow:0px 0px 30px #ddff02;
+    color: black;
+    font-weight: 700; 
+}
+
+
+
+
+
+.btn{
+    width: 200px;
+    position: relative;
+    transition: .1s;
+    box-shadow: 0px 0px 10px goldenrod;
+}
+.btn::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle
+     farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2%);
+     filter: blur(15px);
+     z-index: -1;
+     position: absolute;
+     left: 0;
+     top: 0;
+}
+
+.btn:hover{
+    transform: scale(0.9) rotate(3deg);
+    background-image: radial-gradient(circle
+ farthest-corner at 10% 20%, rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2%);
+ transition: 0.5s;
+ box-shadow: 0px 0px 50px rgb(2, 248, 228);
+}
+
+.btn1{
+    width: 200px;
+    position: relative;
+    transition: .1s;
+    border-radius: 30px;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: #333;
+    box-shadow: 6px 6px 12px rgb(55, 255, 0) , -6px -6px 12px rgb(243, 235, 216)  ;
+}
+.btn1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #ed0f25 0%, #feea0f 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.btn1:hover::before{
+    width: 200px;
+    
+}
+
+.btn2{
+    width: 200px;
+    position: relative;
+    transition: .1s;
+    border-radius: 30px;
+    border: none;
+    font-weight: 400;
+    cursor: pointer;
+    z-index: 3;
+    border: 3px solid white;
+    background-color: #00ffd5;
+    transition: .25s ease;
+    font-weight: 500;
+}
+
+.btn2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    background-size: 50% 100%;
+    border-radius: inherit;
+    z-index: -1;
+}
+.btn2:hover::before{
+    animation: animate .5s linear reverse ;
+}
+
+@keyframes animate {
+    to{
+        transform: translateY(-100%);
+    }
+}
+
+.btn3{
+    width: 200px;
+    color: #020202;
+    font-weight: 600;
+    transition: .5s ease;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-weight: 400;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: cyan;
+    box-shadow: 0px 0px 25px cyan;
+    font-weight: 600;
+}
+
+.btn3:hover{
+    box-shadow: 0px 0px 25px cyan , 0px 0px 50px cyan ,0px 0px 75px cyan ,0px 0px 100px cyan ;
+    transform: scale(.98);
+}
+
+
+.btn4{
+    width: 200px;
+    color: #020202;
+    font-weight: 600;
+    transition: .5s ease;
+    font-weight: 400;
+    cursor: pointer;
+    overflow: hidden;
+    background-image: linear-gradient( #ff4ef9 0%, #eaff01 100%);
+    box-shadow: 0px 10px 15px rgb(255, 13, 239) ,  -10px -10px 20px rgb(255, 242, 0);
+    border: none;
+    transform: skew(15deg)  scale(1.2);
+    letter-spacing: 5px;
+    font-weight: 600;
+    
+}
+.btn4:hover{
+    border-top-left-radius: 65px;
+    border-bottom-right-radius: 65px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-image: linear-gradient(to right, #45f757 0%, #09ff00 100%);
+    transform: scale(.92) skew(-15deg);
+    box-shadow: 10px 20px 25px rgb(145, 217, 36) , -10px -10px 50px greenyellow ,0px 0px 75px rgb(20, 134, 73);
+    letter-spacing: 5px;
+}
+
+.btn5{
+    width: 200px;
+    position: relative;
+    background-color: #020202;
+    font-weight: 600;
+    transition: .5s ease;
+    font-weight: 400;
+    cursor: pointer;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0px 0px 10px greenyellow;
+}
+
+.btn5::before{
+    content: '';
+    position: absolute;
+    top: -3%;
+    background-color: rgb(255, 242, 1);
+    width: 20px;
+    height: 4px;
+    left: 80%;
+    transition: .5s ease;
+}
+.btn5::after{
+    content: '';
+    position: absolute;
+    top: 98%;
+    background-color: rgb(255, 242, 1);
+    width: 20px;
+    height: 4px;
+    left: 10%;
+    transition: .5s ease;
+}
+
+.btn5:hover::after{
+    left: 75%;
+}
+.btn5:hover::before{
+    left: 20%;
+}
+.btn5:hover{
+    transform: scale(1.5);
+    box-shadow: 0px 0px 30px greenyellow;
+}
+
+.btn6{
+    width: 200px;
+    position: relative;
+    background-color: #fcfcfc;
+    color: black;
+    transition: .5s ease;
+    font-weight: 400;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgb(0, 225, 255);
+    font-weight: 600;
+    background-image: radial-gradient(circle ,  #fbfbfb 0%, #766969 100%);
+}
+
+.btn6:hover{
+    transform: scale(1.4) rotate(-4deg) skew(-15deg);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #6dc635 , 10px 10px 10px #0014f1  ;
+    background-image: radial-gradient(circle ,  #ddff00 0%, #ff0022 100%);
+}
+
+
+
